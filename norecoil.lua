@@ -1,0 +1,1 @@
+hookfunction(require(game:GetService("Players").LocalPlayer.PlayerScripts.ProjectilesClient.WeaponScript.RecoilModule).applyRecoil, function() end)
