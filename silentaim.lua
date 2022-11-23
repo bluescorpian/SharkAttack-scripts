@@ -34,3 +34,11 @@ oldRayCastFromWeapon = hookfunction(commonWeapon.raycastFromWeapon, function(...
     local sharkMesh = shark.SharkMain.Mesh.Shark
     return sharkMesh, sharkMesh.Position
 end)
+
+local oldRayCastFromTurret
+oldRayCastFromTurret = hookfunction(commonWeapon.raycastFromTurret, function(...)
+    local shark = getClosestShark()
+    if not shark then return oldRayCastFromTurret(...) end
+    local sharkMesh = shark.SharkMain.Mesh.Shark
+    return sharkMesh, sharkMesh.Position
+end)

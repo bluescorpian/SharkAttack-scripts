@@ -1,7 +1,5 @@
-for _, parent in pairs(workspace:GetChildren()) do
-    for _, child in pairs(parent:GetChildren()) do
-        if child.Name == "Barrier" then
-            child.CanCollide = false
-        end
+for _, descendent in pairs(workspace:GetDescendants()) do
+    if descendent.Name == "Barrier" then
+        descendent.CanCollide = false
     end
 end
