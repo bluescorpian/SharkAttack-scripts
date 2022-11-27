@@ -13,7 +13,7 @@ local function getClosestShark()
         local closest = nil
         for _, shark in pairs(sharks:GetChildren()) do
             local distance = (shark:GetPivot().Position - LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-            if not closest or closest[1] < distance then
+            if not closest or closest[1] > distance then
                 closest = {distance, shark}
             end
         end

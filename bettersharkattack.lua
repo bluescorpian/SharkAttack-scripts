@@ -1,10 +1,12 @@
 local CoreGui = game:GetService("StarterGui")
 
 local exploits = {
-{"Silent Aim", "https://raw.githubusercontent.com/bluescorpian/SharkAttack-scripts/main/silentaim.lua"},
+-- {"Silent Aim", "https://raw.githubusercontent.com/bluescorpian/SharkAttack-scripts/main/silentaim.lua"},
 {"No Recoil", "https://raw.githubusercontent.com/bluescorpian/SharkAttack-scripts/main/norecoil.lua"},
 {"Always Can Fire", "https://raw.githubusercontent.com/bluescorpian/SharkAttack-scripts/main/alwayscanfire.lua"},
-{"No Barriers", "https://raw.githubusercontent.com/bluescorpian/SharkAttack-scripts/main/nobarriers.lua"}
+{"No Barriers", "https://raw.githubusercontent.com/bluescorpian/SharkAttack-scripts/main/nobarriers.lua"},
+{"No Height Cut Off", "https://raw.githubusercontent.com/bluescorpian/SharkAttack-scripts/main/noheightcutoff.lua"},
+{"Shark ESP", "https://raw.githubusercontent.com/bluescorpian/SharkAttack-scripts/main/sharkfinder.lua"}
 }
 
 for _, exploit in pairs(exploits) do

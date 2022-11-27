@@ -5,7 +5,7 @@ local oldStartBoat
 oldStartBoat = hookfunction(startBoat, function(boat, ...)
     -- utils.rconsoleprint(config)
     local config = boat.Configuration
-    config.Engine.EngineCutOutHeight.Value = 50
+    config.Engine.EngineCutOutHeight.Value = 500
     
     return oldStartBoat(boat, ...)
 end)
